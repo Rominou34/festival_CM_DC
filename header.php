@@ -11,7 +11,7 @@
 		<a href="courts-metrages.html">Les courts metrages</a>
 	</div>
 	<div>
-		<a href="index.html">
+		<a href="index.php">
 			<img src="img/logo.png" alt="Logo du festival" id="logo">
 		</a>
 	</div>
