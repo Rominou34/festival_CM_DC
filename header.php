@@ -11,12 +11,12 @@
 		<a href="courts-metrages.html">Les courts metrages</a>
 	</div>
 	<div>
-		<a href="index.php">
+		<a href="inzdex.php">
 			<img src="img/logo.png" alt="Logo du festival" id="logo">
 		</a>
 	</div>
 	<div class="link-container">
 		<a href="#inscription">Inscription</a>
-		<a href="contact.html">Contact</a>
+		<a href="contact.html">Accès</a>
 	</div>
 </header>

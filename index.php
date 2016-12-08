@@ -15,14 +15,12 @@
 		</a>
 	</div>
 	<div class="link-container">
-		<a href="#inscription">Inscription</a>
-		<a href="contact.html">Contact</a>
+		<a href="#inscription.php">Inscription</a>
+		<a href="contact.html">Accès</a>
 	</div>
 </header>
 <body>
-	<h1>Festival du court-metrage</h1>
     
-    <p> Bienvenue sur le meilleur site du monde ! </p>
 
 </body>
 </html>
