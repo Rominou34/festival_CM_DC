@@ -39,10 +39,15 @@ header .link-container {
 	align-items: center;
 }
 
+@font-face {
+    font-family: "ARBonnie";
+    src: url(fonts/ARBONNIE.ttf) format("truetype");
+}
+
 header a {
 	flex-grow: 1;
 	text-align: center;
-	font-family: "Ar Bonnie";
+	font-family: "ARBonnie";
 	color: #fbfbfb;
 	font-size: 32px;
 	text-decoration: none;
