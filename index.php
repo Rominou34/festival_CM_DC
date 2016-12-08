@@ -17,7 +17,7 @@
 		</a>
 	</div>
 	<div class="link-container">
-		<a href="#inscription.php">Inscription</a>
+		<a href="inscription.php">Inscription</a>
 		<a href="contact.html">Accès</a>
 	</div>
     </header>
