@@ -4,7 +4,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Festival du court-metrage</title>
 </head>
-<header>
+
+<body>
+    <header>
 	<div class="link-container">
 		<a href="festival.html">Le festival</a>
 		<a href="courts-metrages.html">Les courts metrages</a>
@@ -18,9 +20,26 @@
 		<a href="#inscription.php">Inscription</a>
 		<a href="contact.html">Accès</a>
 	</div>
-</header>
-<body>
-
+    </header>
+    
+    <section id="accueil">
+        <div id="intro">
+            <p> Bienvenue </p>
+        </div>
+        <div id="compteur">
+            <p> Heure de s'acheter une montre </p>
+        </div>
+    </section>
+    
+    <section id="festival">
+        
+        
+    </section>
+    
+    <section id="CM">
+        
+        
+    </section>
 
     
 </body>
