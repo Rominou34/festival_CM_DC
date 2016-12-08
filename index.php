@@ -35,6 +35,7 @@
     </section>
     
     <section id="festival">
+        <h2>Le festival</h2>
         <div id="prog">
             <p> Programme du festival</p>
             <br><br><br><br><br><br><br><br><br><br><br>
