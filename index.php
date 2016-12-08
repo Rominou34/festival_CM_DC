@@ -20,9 +20,7 @@
 	</div>
 </header>
 <body>
-    <div id="background">
-        <img src="img/camera.jpg" alt="pas de fond">
-    </div>
+
 
 </body>
 </html>
