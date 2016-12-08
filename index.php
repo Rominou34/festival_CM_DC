@@ -28,12 +28,16 @@
         </div>
         <div id="compteur">
             <p> Le compteur ici </p>
+            <!-- contenu !-->
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <!-- Ici !-->
         </div>
     </section>
     
     <section id="festival">
         <div id="prog">
             <p> Programme du festival</p>
+            <br><br><br><br><br><br><br><br><br><br><br>
         </div>
        
     </section>
