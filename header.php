@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Festival du court-metrage</title>
+</head>
+
 <header>
 	<div class="link-container">
 		<a href="festival.html">Le festival</a>
