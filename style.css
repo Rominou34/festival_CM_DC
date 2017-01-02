@@ -2,6 +2,7 @@ html, body {
   width: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
 }
 
 html, body, p, div, article, h1, h2, h3, h4, h5, h6, form {
@@ -161,7 +162,7 @@ section {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(90, 84, 112, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -215,12 +216,15 @@ section {
   left: 0;
   background-color: #101010;
   z-index: 10;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
 }
 
 #video-container div:not(.close-button) {
   width: 100vw;
   height: 100vh;
   display: none;
+
 }
 
 #video-container div h3 {
@@ -259,4 +263,61 @@ section {
 #video-container div .close-button:hover {
   background-color: #7f76a0;
   cursor: pointer;
+}
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/**
+***** FORMULAIRES *****
+**/
+
+form fieldset {
+  border: 0 solid #000;
+  border-left: 4px solid #5A5470;
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  padding: 16px;
+  max-width: 750px;
+}
+
+form fieldset legend {
+  font-size: 32px;
+  color: #828282;
+  text-align: center;
+}
+
+form p {
+  font-size: 24px;
+  margin: 16px auto;
+}
+
+form label {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+form input, form textarea {
+  color: #242424;
+  font-weight: lighter;
+  font-size: 20px;
+  padding: 1px 4px;
+  margin-left: 8px;
+}
+
+input[type=submit] {
+  background-color: #5A5470;
+  color: #fff;
+  font-size: 32px;
+  padding: 12px;
+  border-radius: 2px;
+  border: 0 solid #000;
+  margin: 24px auto;
+}
+
+input[type=submit]:hover {
+  background-color: #7f76a0;
 }
