@@ -199,6 +199,7 @@ section {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
 
 /**
 ***** CONTAINER DES VIDEOS *****
@@ -259,4 +260,34 @@ section {
 #video-container div .close-button:hover {
   background-color: #7f76a0;
   cursor: pointer;
+}
+#horloge {
+    text-align: center;
+    padding-top: 80px;
+}
+#countdown{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 30px;
+}
+#countdown div{
+    padding: 12px;
+    border-radius: 5px;
+    background: #000;
+    display: inline-block;
+}
+
+#countdown div span{
+    padding: 15px;
+    border-radius: 5px;
+    background: #5A5470;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 20px;
 }

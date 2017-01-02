@@ -147,13 +147,27 @@ if (isset($_POST['envoi']))
         <div id="intro">
             <p> Bienvenue </p>
         </div>
-        <div id="compteur">
-            <p> Le compteur ici </p>
-            <!-- contenu !-->
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <!-- Ici !-->
+        <div id="horloge">
+            <div id="countdown">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Jours</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Heures</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Secondes</div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
         </div>
-			</div>
     </section>
 
     <section id="festival">
