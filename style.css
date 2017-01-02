@@ -2,6 +2,7 @@ html, body {
   width: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
+  
 }
 
 html, body, p, div, article, h1, h2, h3, h4, h5, h6, form {
@@ -89,6 +90,7 @@ header a {
 ***** SECTIONS *****
 */
 
+
 /* Header de section */
 section h2 {
     display: block;
@@ -146,6 +148,41 @@ section {
 }
 
 /*
+***** COMPTEUR *****
+*/
+
+#horloge {
+    text-align: center;
+    padding-top: 80px;
+}
+#countdown{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 30px;
+}
+#countdown div{
+    padding: 12px;
+    border-radius: 5px;
+    background: #000;
+    display: inline-block;
+}
+
+#countdown div span{
+    padding: 15px;
+    border-radius: 5px;
+    background: #5A5470;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+/*
 ***** GRILLE VIDEOS *****
 */
 
@@ -161,7 +198,7 @@ section {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(90, 84, 112, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -199,6 +236,7 @@ section {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+  
 }
 
 /**
@@ -216,12 +254,15 @@ section {
   left: 0;
   background-color: #101010;
   z-index: 10;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
 }
 
 #video-container div:not(.close-button) {
   width: 100vw;
   height: 100vh;
   display: none;
+
 }
 
 #video-container div h3 {
@@ -261,33 +302,62 @@ section {
   background-color: #7f76a0;
   cursor: pointer;
 }
-#horloge {
-    text-align: center;
-    padding-top: 80px;
-}
-#countdown{
-    text-align: center;
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    font-size: 30px;
-}
-#countdown div{
-    padding: 12px;
-    border-radius: 5px;
-    background: #000;
-    display: inline-block;
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-#countdown div span{
-    padding: 15px;
-    border-radius: 5px;
-    background: #5A5470;
-    display: inline-block;
+/**
+***** FORMULAIRES *****
+**/
+
+form fieldset {
+  border: 0 solid #000;
+  border-left: 4px solid #5A5470;
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  padding: 16px;
+  max-width: 750px;
 }
 
-.smalltext{
-    padding-top: 5px;
-    font-size: 20px;
+form fieldset legend {
+  font-size: 32px;
+  color: #828282;
+  text-align: center;
 }
+
+form p {
+  font-size: 24px;
+  margin: 16px auto;
+}
+
+form label {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+form input, form textarea {
+  color: #242424;
+  font-weight: lighter;
+  font-size: 20px;
+  padding: 1px 4px;
+  margin-left: 8px;
+}
+
+input[type=submit] {
+  background-color: #5A5470;
+  color: #fff;
+  font-size: 32px;
+  padding: 12px;
+  border-radius: 2px;
+  border: 0 solid #000;
+  margin: 24px auto;
+}
+
+input[type=submit]:hover {
+  background-color: #7f76a0;
+}
+
+
