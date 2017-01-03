@@ -106,7 +106,7 @@ section h2 {
 
 section .content {
   margin: 0;
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(10, 10, 10, 0.75);
   min-height: 100vh;
   padding-top: 40px;
 }
@@ -147,6 +147,17 @@ section {
   z-index: 5;
 }
 
+#contact-infos, #map {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#map iframe {
+    width: 100%;
+    height: 400px;
+}
+
 /*
 ***** COMPTEUR *****
 */
@@ -166,8 +177,11 @@ section {
 #countdown div{
     padding: 12px;
     border-radius: 5px;
-    background: #000;
     display: inline-block;
+}
+
+#countdown div:not(.smalltext) {
+    background: rgba(0,0,0,0.5);
 }
 
 #countdown div span{
@@ -175,11 +189,17 @@ section {
     border-radius: 5px;
     background: #5A5470;
     display: inline-block;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
 }
 
 .smalltext{
     padding-top: 5px;
     font-size: 20px;
+    line-height: 60px;
+    height: 80px;
+    vertical-align: top;
 }
 
 /*
@@ -287,15 +307,16 @@ section {
 
 #video-container div .close-button {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   padding: 8px;
   width: 80px;
   height: 80px;
   line-height: 60px;
   text-align: center;
   background-color: #5A5470;
-  color: #000;
+  color: #fff;
+  border-radius:5px;
 }
 
 #video-container div .close-button:hover {
@@ -358,6 +379,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #7f76a0;
+}
+
+@media screen and (max-width: 800px) {
+    #contact-infos, #map {
+        display: block;
+        width: 100%;
+    }
 }
 
 
