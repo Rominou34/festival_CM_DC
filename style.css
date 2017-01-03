@@ -340,7 +340,7 @@ form fieldset {
   width: 90%;
   margin: 30px auto;
   padding: 16px;
-  max-width: 750px;
+  max-width: 680px;
 }
 
 form fieldset legend {
@@ -350,22 +350,35 @@ form fieldset legend {
 }
 
 form p {
-  font-size: 24px;
+  font-size: 20px;
   margin: 16px auto;
 }
 
 form label {
-  font-weight: normal;
+  font-weight: lighter;
   vertical-align: top;
+  margin-left: 12%;
 }
 
-form input, form textarea {
-  color: #242424;
-  font-weight: lighter;
-  font-size: 20px;
-  padding: 1px 4px;
-  margin-left: 8px;
+form label:not(#nb_pers) {
+  margin-left: 28%;
 }
+
+
+form input, form textarea {
+  color: #000;
+  font-weight: normal;
+  font-size: 22px;
+  padding: 1px 6px;
+  margin-left: 10px;
+}
+
+form input:not(#nb_personnes), form textarea {
+  margin-left: 28%;
+  padding: 2px 8px;
+}
+
+
 
 input[type=submit] {
   background-color: #5A5470;

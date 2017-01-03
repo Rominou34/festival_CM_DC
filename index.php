@@ -174,14 +174,14 @@ include('formulaires.php');
 					echo '<form id="inscription_form" method="post" action="'.$form_action.'">
 						<fieldset>
 							<legend>Vos coordonnées</legend>
-							<p><label for="nom_ins">Nom :</label><input type="text" id="nom_ins" name="nom_ins" value="'.stripslashes($nom_ins).'" tabindex="1" /></p>
-							<p><label for="prenom_ins">Prénom :</label><input type="text" id="prenom_ins" name="prenom_ins" value="'.stripslashes($prenom_ins).'" tabindex="2" /></p>
-							<p><label for="email_ins">Email :</label><input type="text" id="email" name="email_ins" value="'.stripslashes($email_ins).'" tabindex="3" /></p>
-							<p><label for="num_ins">Numéro de téléphone :</label><input type="text" id="num_ins" name="num_ins" value="'.stripslashes($num_ins).'" tabindex="4" /></p>
+							<p><label for="nom_ins">Nom :</label><br><input type="text" id="nom_ins" name="nom_ins" value="'.stripslashes($nom_ins).'" tabindex="1" /></p>
+							<p><label for="prenom_ins">Prénom :</label><br><input type="text" id="prenom_ins" name="prenom_ins" value="'.stripslashes($prenom_ins).'" tabindex="2" /></p>
+							<p><label for="email_ins">Email :</label><br><input type="text" id="email" name="email_ins" value="'.stripslashes($email_ins).'" tabindex="3" /></p>
+							<p><label for="num_ins">Numéro de téléphone :</label><br><input type="text" id="num_ins" name="num_ins" value="'.stripslashes($num_ins).'" tabindex="4" /></p>
 						</fieldset>
 
 						<fieldset><legend>Informations complémentaires</legend>
-							<p><label for="nb_personnes">Nombre de personnes vous accompagnant :</label><input type="number" id="nb_personnes" name="nb_personnes" min="0" max="5" tabindex="5"></p>
+							<p><label for="nb_personnes" id="nb_pers">Nombre de personnes vous accompagnant :</label><input type="number" id="nb_personnes" name="nb_personnes" min="0" max="5" tabindex="5"></p>
 							<p><label for="message_ins">Message ( facultatif ):</label><textarea id="message_ins" name="message_ins" tabindex="6" cols="30" rows="8">'.stripslashes($message_ins).'</textarea></p>
 						</fieldset>
 
@@ -207,13 +207,13 @@ include('formulaires.php');
 				echo '<form id="contact" method="post" action="'.$form_action.'">
 					<fieldset>
 						<legend>Vos coordonnées</legend>
-						<p><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="'.stripslashes($nom).'" tabindex="1" /></p>
-						<p><label for="email">Email :</label><input type="text" id="email" name="email" value="'.stripslashes($email).'" tabindex="2" /></p>
+						<p><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="'.stripslashes($nom).'" tabindex="7" /></p>
+						<p><label for="email">Email :</label><input type="text" id="email" name="email" value="'.stripslashes($email).'" tabindex="8" /></p>
 					</fieldset>
 
 					<fieldset><legend>Votre message</legend>
-						<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="'.stripslashes($objet).'" tabindex="3" /></p>
-						<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="30" rows="8">'.stripslashes($message).'</textarea></p>
+						<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="'.stripslashes($objet).'" tabindex="9" /></p>
+						<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="10" cols="30" rows="8">'.stripslashes($message).'</textarea></p>
 					</fieldset>
 
 					<div style="text-align:center;"><input type="submit" name="envoi" value="Envoyer" /></div>
