@@ -181,8 +181,8 @@ include('formulaires.php');
 						</fieldset>
 
 						<fieldset><legend>Informations complémentaires</legend>
-							<p><label for="nb_personnes" id="nb_pers">Nombre de personnes vous accompagnant :</label><input type="number" id="nb_personnes" name="nb_personnes" min="0" max="5" tabindex="5"></p>
-							<p><label for="message_ins">Message ( facultatif ):</label><textarea id="message_ins" name="message_ins" tabindex="6" cols="30" rows="8">'.stripslashes($message_ins).'</textarea></p>
+							<p><label for="nb_personnes" id="nb_pers">Nombre d\'accompagnateurs :</label><input type="number" id="nb_personnes" name="nb_personnes" min="0" max="5" tabindex="5"></p>
+							<p><label for="message_ins" id="text_ar">Message ( facultatif ):</label><textarea id="message_ins" name="message_ins" tabindex="6" cols="30" rows="8">'.stripslashes($message_ins).'</textarea></p>
 						</fieldset>
 
 						<div style="text-align:center;"><input type="submit" name="envoi_ins" value="Envoyer" /></div>

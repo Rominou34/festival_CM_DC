@@ -357,15 +357,15 @@ form p {
 form label {
   font-weight: lighter;
   vertical-align: top;
-  margin-left: 12%;
+  margin-left: 23%;
 }
 
-form label:not(#nb_pers) {
+form label:not(#nb_pers):not(#text_ar) {
   margin-left: 28%;
 }
 
 
-form input, form textarea {
+form input {
   color: #000;
   font-weight: normal;
   font-size: 22px;
@@ -373,9 +373,18 @@ form input, form textarea {
   margin-left: 10px;
 }
 
-form input:not(#nb_personnes), form textarea {
+form input:not(#nb_personnes) {
   margin-left: 28%;
   padding: 2px 8px;
+}
+
+form textarea {
+  color: #000;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 2px 8px;
+  margin-left: 23%;
+  width: 362px;
 }
 
 
