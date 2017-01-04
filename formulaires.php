@@ -55,7 +55,6 @@ function IsEmail($email)
 // formulaire envoyé, on récupère tous les champs.
 $nom     = (isset($_POST['nom']))     ? Rec($_POST['nom'])     : '';
 $email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
-$objet   = (isset($_POST['objet']))   ? Rec($_POST['objet'])   : '';
 $message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
 
 // On va vérifier les variables et l'email ...
@@ -64,7 +63,7 @@ $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si b
 
 if (isset($_POST['envoi']))
 {
-	if (($nom != '') && ($email != '') && ($objet != '') && ($message != ''))
+	if (($nom != '') && ($email != '') && ($message != ''))
 	{
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'From:'.$nom.' <'.$email.'>' . "\r\n";
@@ -96,23 +95,23 @@ if (isset($_POST['envoi']))
 		$tmp = explode(';', $cible);
 		foreach($tmp as $email_destinataire)
 		{
-			if (mail($email_destinataire, $objet, $message, $headers))
+			if (mail($email_destinataire, "Demande d'informations sur le festival du court-métrage", $message, $headers))
 				$num_emails++;
 		}
 
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			echo '<p>'.$message_envoye.'</p>';
+			echo '<div class="notif">'.$message_envoye.'</div>';
 		}
 		else
 		{
-			echo '<p>'.$message_non_envoye.'</p>';
+			echo '<div class="notif">'.$message_non_envoye.'</div>';
 		};
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.'</p>';
+		echo '<div class="notif">'.$message_formulaire_invalide.'</div>';
 		$err_formulaire = true;
 	};
 }; // fin du if (!isset($_POST['envoi']))
@@ -178,17 +177,17 @@ if (isset($_POST['envoi_ins']))
 
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			echo '<p>'.$message_envoye.'</p>';
+			echo '<div class="notif">'.$message_envoye.'</div>';
 		}
 		else
 		{
-			echo '<p>'.$message_non_envoye.'</p>';
+			echo '<div class="notif">'.$message_non_envoye.'</div>';
 		};
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.'</p>';
+		echo '<div class="notif">'.$message_formulaire_invalide.'</div>';
 		$err_formulaire = true;
 	};
 }; // fin du if (!isset($_POST['envoi']))

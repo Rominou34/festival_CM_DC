@@ -4,15 +4,25 @@ function displayVideo(num) {
   videoDiv.style.display = "block";
 }
 
+function changeVideo(elem, num) {
+  closeVideo(elem);
+  displayVideo(num);
+}
+
 var videoContainer = document.querySelector("#video-container");
 
-var closeButtonList = document.querySelectorAll('.close-button');
+/*var closeButtonList = document.querySelectorAll('.close-button');
 closeButtonList.forEach(function(element) {
   element.addEventListener("click", function() {
     this.parentElement.style.display = "none";
     videoContainer.style.display = "none";
   });
-});
+});*/
+
+function closeVideo(elem) {
+  elem.parentElement.style.display = "none";
+  videoContainer.style.display = "none";
+}
 
 
 var deadline = 'January 09 2017 08:00:00 GMT+0200';
@@ -57,5 +67,3 @@ function initializeClock(id, endtime) {
 }
 
 initializeClock('countdown', deadline);
-
-

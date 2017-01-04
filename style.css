@@ -2,7 +2,7 @@ html, body {
   width: 100%;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
-  
+
 }
 
 html, body, p, div, article, h1, h2, h3, h4, h5, h6, form {
@@ -18,11 +18,18 @@ html, body, p, div, article, h1, h2, h3, h4, h5, h6, form {
 
 body {
     color: #fff;
-    font-size: 32px;
+    font-size: 18px;
 }
 
 a:hover {
   color: #7f76a0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  padding: 14px 0;
+  line-height: 56px;
 }
 
 /*
@@ -75,11 +82,11 @@ header a {
   transition: all 1s;
 
 }
-#logo:hover {
+/*#logo:hover {
   -webkit-animation:spin 1s linear infinite;
   -moz-animation:spin 1s linear infinite;
   animation:spin 1s linear infinite;
-}
+}*/
 
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -106,7 +113,7 @@ section h2 {
 
 section .content {
   margin: 0;
-  background-color: rgba(10, 10, 10, 0.75);
+  background-color: rgba(10, 10, 10, 0.85);
   min-height: 100vh;
   padding-top: 40px;
 }
@@ -128,9 +135,26 @@ section {
 }
 
 #festival {
-
     background-image:url(img/camera2.jpg);
     z-index: 3;
+}
+
+#programme {
+  font-size: 20px;
+  line-height: 48px;
+  margin-top: 30px;
+}
+
+#programme b {
+  color: #7f76a0;
+  font-size: 24px;
+}
+
+.festival-p {
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-bottom: 36px;
 }
 
 #CM {
@@ -147,10 +171,24 @@ section {
   z-index: 5;
 }
 
+#acces {
+  background-image: url(img/map.jpg);
+  z-index: 6;
+}
+
 #contact-infos, #map {
     display: inline-block;
     width: 48%;
     box-sizing: border-box;
+    vertical-align: middle;
+}
+
+#contact-infos p {
+  padding: 12px 0;
+}
+
+#contact-container {
+  margin: 48px auto;
 }
 
 #map iframe {
@@ -249,14 +287,14 @@ section {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
-  }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
-  }
-  
+.project-category {
+  font-size: 20px !important;
+}
+
+.project-name {
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: #ccc !important;
 }
 
 /**
@@ -313,15 +351,40 @@ section {
   width: 80px;
   height: 80px;
   line-height: 60px;
+  font-size: 30px;
   text-align: center;
   background-color: #5A5470;
   color: #fff;
   border-radius:5px;
+  border: 0 solid #000;
 }
 
 #video-container div .close-button:hover {
   background-color: #7f76a0;
   cursor: pointer;
+}
+
+.video-btn-right, .video-btn-left {
+  position: fixed;
+  top: calc(50vh - 40px);
+  padding: 8px;
+  width: 80px;
+  height: 80px;
+  line-height: 60px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #5A5470;
+  color: #fff;
+  border-radius:5px;
+  border: 0 solid #000;
+}
+
+.video-btn-right {
+  right: 40px;
+}
+
+.video-btn-left {
+  left: 40px;
 }
 
 @keyframes fade-in {
@@ -396,18 +459,61 @@ input[type=submit] {
   padding: 12px;
   border-radius: 2px;
   border: 0 solid #000;
-  margin: 24px auto;
+  margin: 24px auto !important;
 }
 
 input[type=submit]:hover {
   background-color: #7f76a0;
 }
 
+.notif {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  background-color: #242424;
+  border-top: 4px solid #5A5470;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 120px;
+  animation-name: fade-out;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-out {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+footer {
+  background-color: #101010;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  padding: 24px;
+}
+
+footer b {
+  font-size: 24px;
+  line-height: 60px;
+}
+
 @media screen and (max-width: 800px) {
     #contact-infos, #map {
         display: block;
-        width: 100%;
+        width: 80%;
+        margin: auto;
+    }
+    .smalltext {
+      display: none !important;
+    }
+
+    .festival-p {
+      width: 80%;
     }
 }
-
-
