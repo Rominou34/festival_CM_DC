@@ -1,5 +1,5 @@
 html, body {
-  width: 100%;
+  width: 100vw;
   min-height: 100%;
   -webkit-font-smoothing: antialiased;
 
@@ -76,6 +76,7 @@ header a {
 
 #logo{
 	max-width: 100%;
+  min-width: 20vw;
   width: 100px;
 	height: auto;
 	display: block;
@@ -297,6 +298,10 @@ section {
   color: #ccc !important;
 }
 
+.img-responsive {
+  width: 100% !important;
+}
+
 /**
 ***** CONTAINER DES VIDEOS *****
 **/
@@ -341,6 +346,7 @@ section {
 #video-container div iframe {
   display: block;
   margin: 20px auto;
+  max-width: 80%;
 }
 
 #video-container div .close-button {
@@ -420,11 +426,13 @@ form p {
 form label {
   font-weight: lighter;
   vertical-align: top;
-  margin-left: 23%;
+  margin: auto;
+  display: block;
 }
 
 form label:not(#nb_pers):not(#text_ar) {
-  margin-left: 28%;
+  margin: auto;
+  display: block;
 }
 
 
@@ -437,7 +445,8 @@ form input {
 }
 
 form input:not(#nb_personnes) {
-  margin-left: 28%;
+  margin: auto;
+  display: block;
   padding: 2px 8px;
 }
 
@@ -446,8 +455,10 @@ form textarea {
   font-weight: normal;
   font-size: 20px;
   padding: 2px 8px;
-  margin-left: 23%;
+  margin: auto;
+  display: block;
   width: 362px;
+  max-width: 90%;
 }
 
 
@@ -515,5 +526,52 @@ footer b {
 
     .festival-p {
       width: 80%;
+    }
+
+    body {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    header a {
+      font-size: 5vw;
+    }
+
+    #video-container div h3 {
+      font-size: 24px;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 8px;
+      line-height: 24px;
+    }
+
+    #video-container div p {
+      font-size: 16px;
+      margin: 8px auto;
+    }
+
+    .video-btn-right {
+      right: 0;
+    }
+
+    .video-btn-left {
+      left: 0;
+    }
+
+    #video-container div .close-button {
+      top: 0;
+      right: 0;
+    }
+
+    .video-btn-left, .video-btn-right, #video-container div .close-button {
+      font-size: 40px;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      padding: 0;
     }
 }
